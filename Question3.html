@@ -1,0 +1,89 @@
+<!-- PROBLEM 3 
+ Problem statement -
+Create a non-responsive dashboard using Tailwind CSS, where the dashboard should include a sidebar
+navigation menu and a main contain area. (Making it responsive is optional)
+Feel free to use any icons from any place, Your goal is to design a visually appealing and user-friendly
+dashboard interface that is not responsive.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-gray-100 flex">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white h-full p-5">
+        <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+        <nav>
+            <!-- Main Navigation -->
+            <ul>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                        🏠 Dashboard
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                        🧑‍🤝‍🧑 Teams
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                        📂 Projects
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                        📄 Documents
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Your Teams Section -->
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold mb-4">Your Teams</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                            🧑‍💻 PW Skills
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center gap-2 p-3 rounded hover:bg-gray-700">
+                            🧪 PW Labs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow mb-6">
+            <div class="flex items-center gap-3">
+                <!-- User Avatar -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <h3 class="font-semibold text-lg">Profile</h3>
+                </div>
+            </div>
+
+            <!-- Profile Actions -->
+            <div class="flex items-center gap-4">
+                <button class="text-gray-600 hover:text-gray-900">⚙️ Settings</button>
+                <button class="text-gray-600 hover:text-gray-900">🔓 Logout</button>
+            </div>
+        </div>
+
+        
+    </main>
+
+</body>
+</html>
+
+

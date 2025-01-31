@@ -1,0 +1,27 @@
+<!-- Question2
+ Problem statement -
+Create a responsive image gallery using Tailwind CSS. The gallery should display a grid of images that adjust
+their size and layout based on the screen size.
+Expected output -
+large screen (minimum width of 1024px) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+      <h5>Image Gallery</h5>
+ 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 mt-4"  >
+        <div><img src="https://i.pinimg.com/736x/a1/a3/a0/a1a3a0e2f7000697378f0f812707d850.jpg" alt="Image 1" class="w-full  rounded shadow-lg"></div>
+
+        <div><img src="https://i.pinimg.com/736x/a1/a3/a0/a1a3a0e2f7000697378f0f812707d850.jpg" alt="Image 2" class="w-full rounded shadow-lg"></div>
+
+        <div><img src="https://i.pinimg.com/736x/a1/a3/a0/a1a3a0e2f7000697378f0f812707d850.jpg" alt="Image 3" class="w-full  rounded shadow-lg"></div>
+
+</body>
+</html>
